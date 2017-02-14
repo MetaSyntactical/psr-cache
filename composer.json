@@ -1,0 +1,25 @@
+{
+  "name": "metasyntactical/psr-cache",
+  "description": "Additional implementation for PSR-6 Cache providing AwareInterfaces (similar to PSR-3 LoggerAware) and NullCache Implementation",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "psr/cache": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Metasyntactical\\Psr\\Cache\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Metasyntactical\\Psr\\Cache\\": "tests/"
+    }
+  },
+  "scripts": {
+    "full-unit-tests": "php -dzend_extension=xdebug.so vendor/bin/phpunit --strict-global-state --coverage-html build/coverage --log-junit build/junit.xml"
+  }
+}

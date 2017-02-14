@@ -1,0 +1,7 @@
+build/
+vendor/
+.idea/
+composer.*
+!composer.json
+phpunit.xml
+.php-version
